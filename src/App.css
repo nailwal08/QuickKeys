@@ -1,0 +1,626 @@
+body {
+  padding-top: 90px;
+  background-color: #F5AEE0;
+}
+
+@media screen and (min-width: 640px) {
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8F6382;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    padding: 8px 12% 8px 12%;
+  }
+
+  .topnavtext {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+
+  .topnav h6 {
+    font-size: small;
+  }
+
+  .title {
+    color: white;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    font-size: 43px;
+    padding-left: 10px;
+    font-weight: 100;
+  }
+
+  .contactportion {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+  }
+
+  .contactportion a {
+    color: skyblue;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+
+  .contactportion a:hover {
+    color: white;
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .timerText {
+    color: black;
+    padding-bottom: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+  }
+
+  .timerCount {
+    padding: 0;
+    line-height: 50px;
+    color: #754567;
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 66px;
+  }
+
+  .Oops {
+    padding: 0;
+    line-height: 50px;
+    color: purple;
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+  }
+
+  .selectTimeWord {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    margin-top: 3%;
+    font-family: 'Space Grotesk', sans-serif;
+    color: black;
+    font-weight: 900;
+  }
+
+  .selectTimeWord span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+  }
+
+  .inputword {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: white;
+    width: 70px;
+    text-align: left;
+    padding: 10px 6px 10px 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(145deg, #37523d63, #1a1a1ab7);
+    box-shadow: 2px 2px 5px #000000bb;
+  }
+
+  .inputword:hover {
+    border: 1px solid white;
+  }
+
+  .buttonStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 8%;
+  }
+
+  .buttonStart span {
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    text-shadow: 1px 1px 0px white;
+    margin-bottom: 10px;
+  }
+
+  .buttonStart button {
+    width: 10%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #8F6382;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 2px 2px 5px #000000bb;
+    font-weight: 100;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .buttonStart button:hover {
+    color: aquamarine;
+    border: 1px solid white;
+  }
+
+  .inputSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .inputSection input {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #323232;
+    background: linear-gradient(-170deg, #52584f, #585f54a2);
+    color: aquamarine;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px #000000bb;
+  }
+
+  .inputSection input:hover {
+    border: 1px solid aquamarine;
+  }
+
+  .buttonStop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
+  }
+
+  .buttonStop button {
+    width: 10%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #8F6382;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 2px 2px 5px #000000bb;
+    font-weight: 100;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .buttonStop button:hover {
+    color: aquamarine;
+    border: 1px solid white;
+  }
+
+  .randomWords {
+    background-color: #8F6382;
+    padding: 22px;
+    margin: 14px 26px 0px 26px;
+    color: #dddddd;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+
+  .Result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+    gap: 10%;
+  }
+
+  .resultportion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .resultText {
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+  }
+
+  .ResultValue {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #8F6382;
+    font-weight: 900;
+    font-size: 22px;
+    padding-left: 3px;
+  }
+
+  .buttonRetry {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .buttonRetry button {
+    width: 10%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #8F6382;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 2px 2px 5px #000000bb;
+    font-weight: 100;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .buttonRetry button:hover {
+    color: aquamarine;
+    border: 1px solid white;
+  }
+
+  .HowToPlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 25px;
+    font-size: 14px;
+    padding: 20px 20% 20px 20%;
+  }
+
+  .foot-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 2% 20px 2%;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 23px;
+  }
+
+  .label {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+}
+
+@media screen and (max-device-width: 640px) {
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8F6382;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    padding: 8px 4% 8px 4%;
+  }
+
+  .topnavtext {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+
+  .topnav h6 {
+    display: none;
+    font-size: 12px;
+  }
+
+  .title {
+    color: white;
+    font-size: 34px;
+    padding-left: 10px;
+    font-weight: 100;
+    font-family: juliet;
+  }
+
+  .removeContact {
+    display: none;
+  }
+
+  .contactportion {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+  }
+
+  .contactportion a {
+    color: #75867a;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: all 0.3s ease;
+    font-size: 12px;
+  }
+
+  .contactportion a:hover {
+    color: #ddd;
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .timerText {
+    color: black;
+    padding-bottom: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+  }
+
+  .timerCount {
+    padding: 0;
+    line-height: 42px;
+    color: #754567;
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 42px;
+  }
+
+  .Oops {
+    padding: 0;
+    line-height: 42px;
+    color: purple;
+    font-weight: bolder;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+  }
+
+  .selectTimeWord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 3%;
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: black;
+    font-weight: 900;
+  }
+
+  .selectTimeWord span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .inputword {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: white;
+    width: 50px;
+    text-align: left;
+    padding: 6px 6px 6px 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(145deg, #37523d63, #1a1a1ab7);
+    box-shadow: 2px 2px 5px #000000bb;
+  }
+
+  .inputword:hover {
+    border: 1px solid white;
+  }
+
+  .buttonStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 8%;
+  }
+
+  .buttonStart span {
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    text-shadow: 1px 1px 0px white;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .buttonStart button {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #8F6382;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 2px 2px 5px #000000bb;
+    font-weight: 100;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .buttonStart button:hover {
+    color: aquamarine;
+    border: 1px solid white;
+  }
+
+  .inputSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .inputSection input {
+    width: 72%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #323232;
+    background: linear-gradient(-170deg, #52584f, #585f54a2);
+    color: aquamarine;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px #000000bb;
+  }
+
+  .inputSection input:hover {
+    border: 1px solid aquamarine;
+  }
+
+  .buttonStop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
+  }
+
+  .buttonStop button {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #8F6382;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 2px 2px 5px #000000bb;
+    font-weight: 100;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .buttonStop button:hover {
+    color: white;
+    border: 1px solid #959494;
+  }
+
+  .randomWords {
+    background-color: #8F6382;
+    padding: 22px;
+    margin: 14px 4% 0px 4%;
+    color: #dddddd;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+
+  .Result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+    gap: 10%;
+  }
+
+  .resultportion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .resultText {
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+  }
+
+  .ResultValue {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #8F6382;
+    font-weight: 900;
+    font-size: 22px;
+    padding-left: 3px;
+  }
+
+  .buttonRetry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .buttonRetry button {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #8F6382;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 2px 2px 5px #000000bb;
+    font-weight: 100;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .buttonRetry button:hover {
+    color: aquamarine;
+    border: 1px solid white;
+  }
+
+  .HowToPlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 25px;
+    font-size: 14px;
+    padding: 20px 2% 20px 2%;
+  }
+
+  .foot-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 2% 20px 2%;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+  }
+
+  .label {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+}
